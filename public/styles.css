@@ -1,0 +1,18 @@
+body{
+    background-color:#ede6e6;
+    font-family:Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+div{
+    border: 1px solid white;
+}
+form { 
+    margin: 0 auto; 
+     width:200px; 
+    }
+ #title{   
+    width:300px;
+}
+#logo{
+    margin: 0 auto;
+}
+

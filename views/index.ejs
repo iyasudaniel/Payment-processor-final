@@ -1,0 +1,147 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/styles.css" type ="text/css">
+     
+
+        </head>
+        <body>
+            <div id="logo">
+                <img src="/assets/logo.png" width="50" height="50"/>
+                <h5>ICT-4300 Portfolio Assignment</h5>
+                <br>
+                <h1 id = 'banner'>Payment Processing System</h1>
+              </div>
+            <div>
+            
+            
+            </div>
+            <div>
+             <script type ="text/javascript" src="../public/script.js"></script> 
+            <form method = "POST" action = "/makepayment">
+               
+                <h2 id = 'title'>Payment Information</h2>
+                
+                Name: <input type="text" name="name" required >
+                <br>
+                <br>
+                Credit Card Number: <input type="text" name="creditCardNumber" inputmode="numeric" pattern="[0-9\s]{13,19}" minlenght="15" maxlength="16"
+                 placeholder="xxxx xxxx xxxx xxxx" required /> 
+                <br>
+                <br>
+                <label>Expiration Date</label><br>
+                <select name="expmonth" required>
+                  <option value="" disabled selected>--</option>
+                  <option value="01">January</option>
+                  <option value="02">February </option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <select name="expyear" required>
+                  <option value="" disabled selected>--</option>
+                  <option value="20"> 2020</option>
+                  <option value="21"> 2021</option>
+                  <option value="22"> 2022</option>
+                  <option value="23"> 2023</option>
+                  <option value="24"> 2024</option>
+                  <option value="25"> 2025</option>
+                  <option value="26"> 2026</option>
+                  <option value="27"> 2027</option>
+                  <option value="28"> 2028</option>
+                  <option value="29"> 2029</option>
+                  <option value="30"> 2030</option>
+                </select>
+                
+              <br>
+              <br>
+              CVV : <input type="text" name="cvv"  placeholder="xxx" inputmode="numeric" minlength="3" maxlength="4" size="3"
+              required>
+              <br>
+              <br>
+              <br>
+               <strong>Billing Address:</strong><br>
+                <label>Street 1</label><br>
+        <input type="text" id="street" required /><br>
+        <label></label>Street 2</label><br>
+        <input type="text" id="street2" /><br>
+        <label>City</label><br>
+        <input type="text" id="city" required /><br>
+        <label>State</label><br>
+        <select id="state" size="1">
+          <option value="" disabled selected>--</option>
+          <option value="AK">AK</option>
+          <option value="AL">AL</option>
+          <option value="AR">AR</option>
+          <option value="AZ">AZ</option>
+          <option value="CA">CA</option>
+          <option value="CO">CO</option>
+          <option value="CT">CT</option>
+          <option value="DC">DC</option>
+          <option value="DE">DE</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+          <option value="HI">HI</option>
+          <option value="IA">IA</option>
+          <option value="ID">ID</option>
+          <option value="IL">IL</option>
+          <option value="IN">IN</option>
+          <option value="KS">KS</option>
+          <option value="KY">KY</option>
+          <option value="LA">LA</option>
+          <option value="MA">MA</option>
+          <option value="MD">MD</option>
+          <option value="ME">ME</option>
+          <option value="MI">MI</option>
+          <option value="MN">MN</option>
+          <option value="MO">MO</option>
+          <option value="MS">MS</option>
+          <option value="MT">MT</option>
+          <option value="NC">NC</option>
+          <option value="ND">ND</option>
+          <option value="NE">NE</option>
+          <option value="NH">NH</option>
+          <option value="NJ">NJ</option>
+          <option value="NM">NM</option>
+          <option value="NV">NV</option>
+          <option value="NY">NY</option>
+          <option value="OH">OH</option>
+          <option value="OK">OK</option>
+          <option value="OR">OR</option>
+          <option value="PA">PA</option>
+          <option value="RI">RI</option>
+          <option value="SC">SC</option>
+          <option value="SD">SD</option>
+          <option value="TN">TN</option>
+          <option value="TX">TX</option>
+          <option value="UT">UT</option>
+          <option value="VA">VA</option>
+          <option value="VT">VT</option>
+          <option value="WA">WA</option>
+          <option value="WI">WI</option>
+          <option value="WV">WV</option>
+          <option value="WY">WY</option>
+        </select><br>
+        <label>Zip Code</label><br>
+        <input type="text" id="zipcode" size="5" minlength="5" maxlength="5" pattern="^\d{5}$" placeholder="xxxxx"
+          required />
+                <br>
+                <br>
+                <h2>Total amount:<input type = "text" id = "totalAmount" name = "totalAmount"/><br> </h2>
+                <input type="submit" name="submit" value="Make Payment">
+                <input type ="reset">
+                <br>
+                <br>
+            </form>
+        </div>
+       
+         
+        </body>
+</html>
